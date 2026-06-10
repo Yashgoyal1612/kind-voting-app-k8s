@@ -31,6 +31,8 @@ the cluster was monitored using **Prometheus** and **Grafana**.
 A user votes between two options, the vote is stored, and the live results
 are shown on a separate page.
 
+A user casts a vote on the vote page (Python). The vote goes into Redis (a queue). The worker (.NET) reads it from Redis and saves it to the Postgres database. The result page (Node.js) reads from Postgres and shows live results.
+
 | Service | Built with | What it does |
 |---------|-----------|--------------|
 | **vote** | Python | Web page to cast a vote |

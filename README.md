@@ -43,46 +43,7 @@ are shown on a separate page.
 
 ## Architecture
 
-```mermaid
-flowchart LR
-    user(["User"])
-
-    subgraph ec2["AWS EC2 Instance"]
-        subgraph kind["Kind Kubernetes Cluster — 1 control-plane + 2 workers"]
-            subgraph app["Voting Application"]
-                direction LR
-                vote["vote<br/>(Python)"]
-                redis[("redis<br/>queue")]
-                worker["worker<br/>(.NET)"]
-                db[("db<br/>PostgreSQL")]
-                result["result<br/>(Node.js)"]
-            end
-            argocd["Argo CD<br/>deploy &amp; manage"]
-            dash["Kubernetes<br/>Dashboard"]
-            mon["Prometheus<br/>+ Grafana"]
-        end
-    end
-
-    user -->|cast vote| vote
-    vote -->|store vote| redis
-    redis -->|read vote| worker
-    worker -->|save| db
-    db -->|read results| result
-    result -->|live results| user
-
-    argocd -.deploys.-> app
-    dash -.views.-> app
-    mon -.monitors.-> kind
-
-    classDef store fill:#ffe9c7,stroke:#d18f00,color:#5c3d00;
-    classDef svc fill:#d6e8ff,stroke:#2b6cb0,color:#10243e;
-    classDef ops fill:#e3dcff,stroke:#6b46c1,color:#241b4d;
-    class vote,worker,result svc;
-    class redis,db store;
-    class argocd,dash,mon ops;
-```
-
----
+<img width="6810" height="3292" alt="k8s-kind-voting-app" src="https://github.com/user-attachments/assets/ec35da73-a585-4c14-841a-cc2b23464b6d" />
 
 ## Screenshots
 

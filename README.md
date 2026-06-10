@@ -43,7 +43,7 @@ are shown on a separate page.
 
 ## Architecture
 
-<img width="6810" height="3292" alt="k8s-kind-voting-app" src="https://github.com/user-attachments/assets/ec35da73-a585-4c14-841a-cc2b23464b6d" />
+<img width="1702" height="924" alt="k8s-kind-voting-app" src="https://github.com/user-attachments/assets/bbd44938-c45e-48f7-9010-4e543f0cae5a" />
 
 ## Screenshots
 

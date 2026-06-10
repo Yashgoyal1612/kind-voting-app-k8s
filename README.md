@@ -126,7 +126,3 @@ helm install kind-prometheus prometheus-community/kube-prometheus-stack --namesp
 ```
 
 > All the exact commands are in [`kind-cluster/commands.md`](kind-cluster/commands.md).
-
----
-
-Base application from the [Docker Example Voting App](https://github.com/dockersamples/example-voting-app).

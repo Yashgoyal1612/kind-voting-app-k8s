@@ -45,23 +45,39 @@ are shown on a separate page.
 
 ## Screenshots
 
-**1. Kubernetes cluster created with Kind (3 nodes, all Ready)**
-![Kind cluster setup](assets/screenshots/kind-cluster-setup.png)
+### 1. Kubernetes cluster created with Kind (3 nodes, all Ready)
 
-**2. Kubernetes Dashboard — running workloads**
-![Kubernetes Dashboard](assets/screenshots/kubernetes-dashboard.png)
+<img src="assets/screenshots/kind-cluster-setup.png" width="800" alt="Kind cluster setup">
 
-**3. Argo CD — application deployed (Healthy & Synced)**
-![Argo CD application](assets/screenshots/argocd-application-tree.png)
+<br>
 
-**4. Argo CD — services and pods view**
-![Argo CD network view](assets/screenshots/argocd-network-view.png)
+### 2. Kubernetes Dashboard — running workloads
 
-**5. Prometheus — cluster metrics**
-![Prometheus](prometheus.png)
+<img src="assets/screenshots/kubernetes-dashboard.png" width="800" alt="Kubernetes Dashboard">
 
-**6. Grafana — monitoring dashboards**
-![Grafana](grafana.png)
+<br>
+
+### 3. Argo CD — application deployed (Healthy & Synced)
+
+<img src="assets/screenshots/argocd-application-tree.png" width="800" alt="Argo CD application">
+
+<br>
+
+### 4. Argo CD — services and pods view
+
+<img src="assets/screenshots/argocd-network-view.png" width="800" alt="Argo CD network view">
+
+<br>
+
+### 5. Prometheus — cluster metrics
+
+<img src="prometheus.png" width="800" alt="Prometheus">
+
+<br>
+
+### 6. Grafana — monitoring dashboards
+
+<img src="grafana.png" width="800" alt="Grafana">
 
 ---
 

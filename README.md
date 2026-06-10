@@ -129,8 +129,4 @@ helm install kind-prometheus prometheus-community/kube-prometheus-stack --namesp
 
 ---
 
-## Author
-
-**Yash Goyal** — [@Yashgoyal1612](https://github.com/Yashgoyal1612)
-
 Base application from the [Docker Example Voting App](https://github.com/dockersamples/example-voting-app).
